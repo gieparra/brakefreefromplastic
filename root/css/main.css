@@ -1,0 +1,519 @@
+/*
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+*/
+
+
+/* generic elements */
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+
+}
+
+h1 {
+    font-size: 3.8em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #0071bc;
+    margin-bottom: 2rem;
+
+}
+
+h2 {
+    font-size: 2.6em;
+    color: #0071bc;
+}
+
+p {
+    font-size: 1.7em;
+    margin-bottom: 2em;
+    line-height: 1.4;
+}
+
+ul {
+    font-size: 1.7em;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+strong {
+    font-weight: 700;
+}
+
+
+
+/* header */
+header {
+    background: url("../images/swim-ocean-bg-600px.jpg") no-repeat bottom center;
+    background-size: cover;
+    height: 500px;
+    padding: 2.5rem;
+    color: #0e5a68;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header img {
+    width: 20rem;
+}
+
+.problemPg {
+    background: none;
+    height: auto;
+}
+
+
+header h2 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(47, 72, 88, 2);
+    max-width: 70%;
+
+}
+
+
+/* navigation menu */
+nav {
+    font-size: 1.2em;
+    text-align: right;
+    margin-bottom: 2em;
+    position: fixed;
+    top: 6rem;
+    right: 2.5rem;
+    display: none;
+    background-color: #0071bc;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: .8rem;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #ed1c24;
+
+}
+
+nav a:visited {
+    color: #fff;
+}
+
+.navToggler:checked ~ nav {
+    display: block;
+    z-index: 20;
+}
+
+.navToggler {
+    display: none;
+}
+
+.navTogglerMenu {
+    background-color: #ed1c24;
+    border-radius: .5em;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    z-index: 10;
+}
+
+/* hamburger menu icon */
+.menuOpen {
+    font-size: 3em;
+    color: #fff;
+}
+
+/* volunteer icon */
+.volunteerIcon {
+    font-size: 3.5em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.volunteer {
+    width: 75px;
+    height: 75px;
+    background-color: #0071bc;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+}
+
+
+/************** main ***********/
+main {
+    margin: 3em auto;
+    width: 85%;
+}
+
+main a {
+    text-decoration: none;
+}
+
+.problem {
+    width: 100px;
+}
+
+.health {
+    max-width: 100px;
+}
+
+
+article {
+    border-bottom: solid #0071bc 1px;
+    padding: 3em;
+}
+
+article:last-of-type {
+    border-bottom: none;
+}
+
+article h2 {
+    color: #0071bc;
+    margin: 1rem 0;
+    text-decoration: none;
+}
+
+figcaption {
+    font-size: 1.2em;
+    font-weight: 400;
+    font-style: italic;
+    text-align: right;
+    padding: 0 0 2rem;
+}
+
+/* pages: The Problem / Health Impact / Solution */
+
+.pagesBg {
+    background: url("../images/waste-bg-1200px.svg") no-repeat bottom center;
+    background-size: auto;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.breakLine {
+    border-top: solid 1px #0071bc;
+    padding: 3rem 0 0;
+}
+
+.pages {
+    max-width: 800px;
+    margin: 0 5rem 3rem;
+    border-bottom: solid 10rem #fff;
+
+
+}
+
+.pages h2 {
+    margin-left: 0;
+    margin-bottom: 1rem;
+
+}
+
+.pages ul {
+    list-style-type: disc;
+    margin-bottom: 2em;
+    line-height: 1.4;
+}
+
+.pages img {
+    margin-bottom: 2rem;
+}
+
+/* solution page */
+
+.solution {
+    width: 100px;
+}
+
+.donate {
+    color: #0071bc;
+    border: solid 3px #ed1c24;
+    border-radius: 50px;
+    width: 500px;
+    padding: 2rem;
+    margin: auto;
+    margin-bottom: 5rem;
+
+}
+
+.donate p {
+    all: unset;
+    font-size: 2rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+/* footer */
+footer {
+    color: #fff;
+    background-color: #000;
+    padding: 2em;
+    font-size: .85rem;
+    text-align: right;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: auto;
+}
+
+footer img {
+    margin-right: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+.material-icons {
+    color: #fff;
+    ;
+    font-size: 5em;
+    background-color: #0071bc;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+/*social media icons*/
+.fa {
+    padding: 1rem;
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: .5rem;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.video {
+    width: 100%;
+    height: 56.25vw; /*16:9*/
+}
+
+/* map */
+
+.mapWrapper {
+
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+
+.mapWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*  LARGE SCREEN */
+
+@media screen and (min-width: 800px) {
+
+    header {
+        background-image: url("../images/swim-ocean-bg-2048px.jpg");
+        padding: 6rem;
+        font-size: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: row;
+
+
+    }
+
+    .navTogglerMenu {
+        display: none;
+    }
+
+    nav {
+        all: unset;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-start;
+
+    }
+
+    nav ul {
+        background-color: #0071bc;
+        display: flex;
+    }
+
+    nav li {
+        border-bottom: none;
+        padding: 0 .6rem;
+    }
+    
+    nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: .8rem;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #ed1c24;
+
+}
+
+nav a:visited {
+    color: #fff;
+}
+
+    header h2 {
+        display: flex;
+        align-self: flex-end;
+
+    }
+
+
+    article::after {
+        clear: both;
+        content: "";
+        display: block;
+        height: 0;
+        margin-bottom: .8em;
+    }
+
+    header {
+        background-position: center center;
+        height: 500px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5em;
+        max-width: 1200px;
+    }
+
+    article {
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        padding-top: 2rem;
+
+    }
+
+    article img {
+        height: 100px;
+
+    }
+
+    .pages img {
+        height: auto;
+    }
+
+    article h2 {
+        margin-top: .8em;
+        text-align: center;
+
+
+    }
+
+    article p {
+        margin-top: .5em;
+        align-self: flex-start;
+    }
+
+    article:first-of-type {
+        order: 1;
+    }
+
+    article:last-of-type {
+        order: 2;
+    }
+
+    .pages {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .mapWrapper {
+        overflow: hidden;
+        width: 100%;
+    }
+
+}
